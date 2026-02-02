@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['instance_0',['instance',['../class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021',1,'ApiClient']]]
+  ['eventfilter_0',['eventFilter',['../class_main_window.html#aeaecedc36266ab4571b7af2a9fcd5b08',1,'MainWindow']]]
 ];

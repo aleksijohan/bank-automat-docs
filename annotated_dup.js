@@ -21,12 +21,12 @@ var annotated_dup =
     ] ],
     [ "Accountinfo", "class_accountinfo.html", "class_accountinfo" ],
     [ "ApiClient", "class_api_client.html", "class_api_client" ],
-    [ "ChooseCard", "class_choose_card.html", null ],
+    [ "ChooseCard", "class_choose_card.html", "class_choose_card" ],
     [ "Data", "class_data.html", "class_data" ],
-    [ "Deposit", "class_deposit.html", null ],
+    [ "Deposit", "class_deposit.html", "class_deposit" ],
     [ "Environment", "class_environment.html", null ],
-    [ "MainWindow", "class_main_window.html", null ],
-    [ "transfer", "classtransfer.html", null ],
+    [ "MainWindow", "class_main_window.html", "class_main_window" ],
+    [ "transfer", "classtransfer.html", "classtransfer" ],
     [ "Ui_Accountinfo", "class_ui___accountinfo.html", null ],
     [ "Ui_ChooseCard", "class_ui___choose_card.html", null ],
     [ "Ui_Data", "class_ui___data.html", null ],
@@ -34,5 +34,5 @@ var annotated_dup =
     [ "Ui_MainWindow", "class_ui___main_window.html", null ],
     [ "Ui_transfer", "class_ui__transfer.html", null ],
     [ "Ui_Withdraw", "class_ui___withdraw.html", null ],
-    [ "Withdraw", "class_withdraw.html", null ]
+    [ "Withdraw", "class_withdraw.html", "class_withdraw" ]
 ];

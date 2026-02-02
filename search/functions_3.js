@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['get_0',['get',['../class_api_client.html#a097acc160820ebc24ef692bc1c10e0fb',1,'ApiClient']]],
-  ['gettoken_1',['getToken',['../class_api_client.html#ac86e04c2673f77c46e331930f6e726a7',1,'ApiClient']]]
+  ['data_0',['Data',['../class_data.html#a15353587ef82da475198861c2d35cd95',1,'Data']]],
+  ['deposit_1',['Deposit',['../class_deposit.html#a363f1781f53ff8b767eeb271cb2ec11e',1,'Deposit']]],
+  ['depositsuccessful_2',['depositSuccessful',['../class_deposit.html#a16eaa366d1830989b546f31b04af10b0',1,'Deposit']]]
 ];

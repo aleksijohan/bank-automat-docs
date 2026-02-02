@@ -92,7 +92,7 @@ $(function(){initNavTree('class_data.html','','class_data-members'); });
 </div><!--header-->
 <div class="contents">
 
-<p>Näyttää käyttäjän perustiedot JSON-datasta.  
+<p>Dialogi, joka näyttää käyttäjän perustiedot JSON-datasta.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="data_8h_source.html">data.h</a>&gt;</code></p>
@@ -112,15 +112,14 @@ Signals</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a15353587ef82da475198861c2d35cd95" id="r_a15353587ef82da475198861c2d35cd95"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a15353587ef82da475198861c2d35cd95">Data</a> (QWidget *parent=nullptr)</td></tr>
 <tr class="memdesc:a15353587ef82da475198861c2d35cd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo Data-dialogin.  <br /></td></tr>
-<tr class="memitem:aab31956423290f0d62dcca47ab4d16dd" id="r_aab31956423290f0d62dcca47ab4d16dd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aab31956423290f0d62dcca47ab4d16dd">~Data</a> ()</td></tr>
-<tr class="memdesc:aab31956423290f0d62dcca47ab4d16dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-luokan destruktori.  <br /></td></tr>
+<tr class="memitem:aab31956423290f0d62dcca47ab4d16dd" id="r_aab31956423290f0d62dcca47ab4d16dd"><td class="memItemLeft"><a id="aab31956423290f0d62dcca47ab4d16dd" name="aab31956423290f0d62dcca47ab4d16dd"></a>
+&#160;</td><td class="memItemRight"><b>~Data</b> ()</td></tr>
+<tr class="memdesc:aab31956423290f0d62dcca47ab4d16dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data-luokan destruktori. <br /></td></tr>
 <tr class="memitem:ae89b6d915602789adaa131434fa3bf6a" id="r_ae89b6d915602789adaa131434fa3bf6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae89b6d915602789adaa131434fa3bf6a">setTestData</a> (const QByteArray &amp;newTestData)</td></tr>
 <tr class="memdesc:ae89b6d915602789adaa131434fa3bf6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa JSON-datan ja päivittää UI-elementit.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Näyttää käyttäjän perustiedot JSON-datasta. </p>
-<p>Dialogi, joka näyttää käyttäjän perustiedot JSON-datasta.</p>
-<p>Tämä dialogi vastaanottaa backendiltä saadun JSON-olion, parsii sen ja näyttää käyttäjän nimen, osoitteen ja muut perustiedot. Lisäksi ikkunasta voi palata takaisin tai kirjautua ulos.</p>
+<div class="textblock"><p>Dialogi, joka näyttää käyttäjän perustiedot JSON-datasta. </p>
 <p>Tämä luokka vastaanottaa backendiltä saadun JSON-olion ja näyttää sen sisällön käyttöliittymässä (etunimi, sukunimi, osoite). Lisäksi dialogista voi palata takaisin tai kirjautua ulos. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15353587ef82da475198861c2d35cd95" name="a15353587ef82da475198861c2d35cd95"></a>
@@ -147,35 +146,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Luo Data-dialogin. </p>
-<p>Data-luokan konstruktori.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Vanhempi widget, yleensä Accountinfo-ikkuna.</td></tr>
-    <tr><td class="paramname">parent</td><td>Vanhempi QWidget, yleensä Accountinfo-ikkuna.</td></tr>
+    <tr><td class="paramname">parent</td><td>Vanhempi widget, yleensä Accountinfo-ikkuna. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Alustaa käyttöliittymän ja yhdistää napit niiden käsittelijöihin. </p>
-
-</div>
-</div>
-<a id="aab31956423290f0d62dcca47ab4d16dd" name="aab31956423290f0d62dcca47ab4d16dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab31956423290f0d62dcca47ab4d16dd">&#9670;&#160;</a></span>~Data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Data::~Data </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Data-luokan destruktori. </p>
-<p>Vapauttaa käyttöliittymäolion. </p>
 
 </div>
 </div>
@@ -224,21 +200,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Asettaa JSON-datan ja päivittää UI-elementit. </p>
-<p>Asettaa ja parsii JSON-datan, joka sisältää käyttäjän tiedot.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newTestData</td><td>JSON-data QByteArray-muodossa.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Funktio parsii JSON-datan ja asettaa käyttöliittymän kentät. Jos data on virheellistä tai avaimia puuttuu, käytetään fallback-arvoa "Ei dataa".</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newTestData</td><td>JSON-data QByteArray-muodossa.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Funktio yrittää jäsentää JSON-datan ja asettaa UI-elementteihin käyttäjän etunimen, sukunimen ja osoitteen. Jos JSON on virheellinen tai avaimia puuttuu, näytetään fallback-teksti "Ei dataa". </p>
+<p>Funktio parsii JSON-datan ja asettaa käyttöliittymän kentät. Jos data on virheellistä tai avaimia puuttuu, käytetään fallback-arvoa "Ei dataa". </p>
 
 </div>
 </div>

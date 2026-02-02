@@ -91,6 +91,11 @@ $(function(){initNavTree('classtransfer.html','','classtransfer-members'); });
   <div class="headertitle"><div class="title">transfer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ikkuna, jossa käyttäjä voi siirtää rahaa omalta tililtään toiselle tilille.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="transfer_8h_source.html">transfer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for transfer:</div>
 <div class="dyncontent">
@@ -102,30 +107,182 @@ Inheritance diagram for transfer:</div>
 Signals</h2></td></tr>
 <tr class="memitem:aefd4f6f8797694067fea2d52abb81926" id="r_aefd4f6f8797694067fea2d52abb81926"><td class="memItemLeft"><a id="aefd4f6f8797694067fea2d52abb81926" name="aefd4f6f8797694067fea2d52abb81926"></a>
 void&#160;</td><td class="memItemRight"><b>transferSuccesful</b> ()</td></tr>
+<tr class="memdesc:aefd4f6f8797694067fea2d52abb81926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lähetetään, kun rahansiirto on suoritettu onnistuneesti. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad399baadea5fd1bccebc44978d685b9c" id="r_ad399baadea5fd1bccebc44978d685b9c"><td class="memItemLeft"><a id="ad399baadea5fd1bccebc44978d685b9c" name="ad399baadea5fd1bccebc44978d685b9c"></a>
-&#160;</td><td class="memItemRight"><b>transfer</b> (QWidget *parent=nullptr)</td></tr>
-<tr class="memitem:a02930df6ccfe72efed2135d65715de3d" id="r_a02930df6ccfe72efed2135d65715de3d"><td class="memItemLeft"><a id="a02930df6ccfe72efed2135d65715de3d" name="a02930df6ccfe72efed2135d65715de3d"></a>
-void&#160;</td><td class="memItemRight"><b>setAccountId</b> (int id)</td></tr>
-<tr class="memitem:a6ff1c340f4a896b4d51b52cf0c21af94" id="r_a6ff1c340f4a896b4d51b52cf0c21af94"><td class="memItemLeft"><a id="a6ff1c340f4a896b4d51b52cf0c21af94" name="a6ff1c340f4a896b4d51b52cf0c21af94"></a>
-void&#160;</td><td class="memItemRight"><b>setToken</b> (const QString &amp;t)</td></tr>
-<tr class="memitem:a50a898e039412ecfd85a7db6aa1ffec4" id="r_a50a898e039412ecfd85a7db6aa1ffec4"><td class="memItemLeft"><a id="a50a898e039412ecfd85a7db6aa1ffec4" name="a50a898e039412ecfd85a7db6aa1ffec4"></a>
-void&#160;</td><td class="memItemRight"><b>getBalance</b> ()</td></tr>
+<tr class="memitem:ad399baadea5fd1bccebc44978d685b9c" id="r_ad399baadea5fd1bccebc44978d685b9c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad399baadea5fd1bccebc44978d685b9c">transfer</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:ad399baadea5fd1bccebc44978d685b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo transfer-dialogin.  <br /></td></tr>
+<tr class="memitem:a677eaf4d29c7eb2099eaf4a4e8d871fb" id="r_a677eaf4d29c7eb2099eaf4a4e8d871fb"><td class="memItemLeft"><a id="a677eaf4d29c7eb2099eaf4a4e8d871fb" name="a677eaf4d29c7eb2099eaf4a4e8d871fb"></a>
+&#160;</td><td class="memItemRight"><b>~transfer</b> ()</td></tr>
+<tr class="memdesc:a677eaf4d29c7eb2099eaf4a4e8d871fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa transfer-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
+<tr class="memitem:a02930df6ccfe72efed2135d65715de3d" id="r_a02930df6ccfe72efed2135d65715de3d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a02930df6ccfe72efed2135d65715de3d">setAccountId</a> (int id)</td></tr>
+<tr class="memdesc:a02930df6ccfe72efed2135d65715de3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa tilin ID:n, jolta siirto tehdään.  <br /></td></tr>
+<tr class="memitem:a6ff1c340f4a896b4d51b52cf0c21af94" id="r_a6ff1c340f4a896b4d51b52cf0c21af94"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ff1c340f4a896b4d51b52cf0c21af94">setToken</a> (const QString &amp;t)</td></tr>
+<tr class="memdesc:a6ff1c340f4a896b4d51b52cf0c21af94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa backend-tokenin, jota käytetään siirtopyynnössä.  <br /></td></tr>
+<tr class="memitem:a50a898e039412ecfd85a7db6aa1ffec4" id="r_a50a898e039412ecfd85a7db6aa1ffec4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50a898e039412ecfd85a7db6aa1ffec4">getBalance</a> ()</td></tr>
+<tr class="memdesc:a50a898e039412ecfd85a7db6aa1ffec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hakee käyttäjän saldon backendistä.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a29840a875e7ec103b1b50f774a58c434" id="r_a29840a875e7ec103b1b50f774a58c434"><td class="memItemLeft"><a id="a29840a875e7ec103b1b50f774a58c434" name="a29840a875e7ec103b1b50f774a58c434"></a>
 QString&#160;</td><td class="memItemRight"><b>balance</b></td></tr>
+<tr class="memdesc:a29840a875e7ec103b1b50f774a58c434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tilin tämänhetkinen saldo merkkijonona. <br /></td></tr>
 <tr class="memitem:a140722cbdb3a75df9fc54c3ed1bb39a2" id="r_a140722cbdb3a75df9fc54c3ed1bb39a2"><td class="memItemLeft"><a id="a140722cbdb3a75df9fc54c3ed1bb39a2" name="a140722cbdb3a75df9fc54c3ed1bb39a2"></a>
 QString&#160;</td><td class="memItemRight"><b>token</b></td></tr>
+<tr class="memdesc:a140722cbdb3a75df9fc54c3ed1bb39a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend-token siirtopyyntöä varten. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a01efe9e9e32994bc7e87268c75051a40" id="r_a01efe9e9e32994bc7e87268c75051a40"><td class="memItemLeft"><a id="a01efe9e9e32994bc7e87268c75051a40" name="a01efe9e9e32994bc7e87268c75051a40"></a>
-void&#160;</td><td class="memItemRight"><b>showEvent</b> (QShowEvent *event) override</td></tr>
+<tr class="memitem:a01efe9e9e32994bc7e87268c75051a40" id="r_a01efe9e9e32994bc7e87268c75051a40"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a01efe9e9e32994bc7e87268c75051a40">showEvent</a> (QShowEvent *event) override</td></tr>
+<tr class="memdesc:a01efe9e9e32994bc7e87268c75051a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suoritetaan, kun dialogi näytetään ensimmäisen kerran.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ikkuna, jossa käyttäjä voi siirtää rahaa omalta tililtään toiselle tilille. </p>
+<p>Transfer-dialogi mahdollistaa:</p><ul>
+<li>käyttäjän saldon hakemisen backendistä</li>
+<li>siirtosumman syöttämisen</li>
+<li>rahansiirron lähettämisen backendille</li>
+<li>onnistuneen siirron ilmoittamisen signaalilla </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad399baadea5fd1bccebc44978d685b9c" name="ad399baadea5fd1bccebc44978d685b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad399baadea5fd1bccebc44978d685b9c">&#9670;&#160;</a></span>transfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">transfer::transfer </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Luo transfer-dialogin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Vanhempi QWidget, yleensä nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a50a898e039412ecfd85a7db6aa1ffec4" name="a50a898e039412ecfd85a7db6aa1ffec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a898e039412ecfd85a7db6aa1ffec4">&#9670;&#160;</a></span>getBalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfer::getBalance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hakee käyttäjän saldon backendistä. </p>
+<p>Tallentaa saldon <a class="el" href="#a29840a875e7ec103b1b50f774a58c434" title="balance">balance</a> -muuttujaan. </p>
+
+</div>
+</div>
+<a id="a02930df6ccfe72efed2135d65715de3d" name="a02930df6ccfe72efed2135d65715de3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02930df6ccfe72efed2135d65715de3d">&#9670;&#160;</a></span>setAccountId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfer::setAccountId </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa tilin ID:n, jolta siirto tehdään. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Tilin tunniste. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ff1c340f4a896b4d51b52cf0c21af94" name="a6ff1c340f4a896b4d51b52cf0c21af94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff1c340f4a896b4d51b52cf0c21af94">&#9670;&#160;</a></span>setToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfer::setToken </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa backend-tokenin, jota käytetään siirtopyynnössä. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Token merkkijonona. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01efe9e9e32994bc7e87268c75051a40" name="a01efe9e9e32994bc7e87268c75051a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01efe9e9e32994bc7e87268c75051a40">&#9670;&#160;</a></span>showEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfer::showEvent </td>
+          <td>(</td>
+          <td class="paramtype">QShowEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suoritetaan, kun dialogi näytetään ensimmäisen kerran. </p>
+<p>Tätä käytetään esimerkiksi saldon päivittämiseen automaattisesti. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Näyttötapahtuma. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="transfer_8h_source.html">transfer.h</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__transfer_8cpp_source.html">moc_transfer.cpp</a></li>

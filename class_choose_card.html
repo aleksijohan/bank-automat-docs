@@ -91,6 +91,11 @@ $(function(){initNavTree('class_choose_card.html','','class_choose_card-members'
   <div class="headertitle"><div class="title">ChooseCard Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ikkuna, jossa käyttäjä valitsee debit- tai credit-kortin dual-kortilla.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="choosecard_8h_source.html">choosecard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ChooseCard:</div>
 <div class="dyncontent">
@@ -100,20 +105,145 @@ Inheritance diagram for ChooseCard:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-signals" class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:abf0e54f0feeb73fda1660e865879fc8c" id="r_abf0e54f0feeb73fda1660e865879fc8c"><td class="memItemLeft"><a id="abf0e54f0feeb73fda1660e865879fc8c" name="abf0e54f0feeb73fda1660e865879fc8c"></a>
-void&#160;</td><td class="memItemRight"><b>cardSelected</b> (QString type)</td></tr>
+<tr class="memitem:abf0e54f0feeb73fda1660e865879fc8c" id="r_abf0e54f0feeb73fda1660e865879fc8c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abf0e54f0feeb73fda1660e865879fc8c">cardSelected</a> (QString type)</td></tr>
+<tr class="memdesc:abf0e54f0feeb73fda1660e865879fc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lähetetään, kun käyttäjä valitsee debit- tai credit-kortin.  <br /></td></tr>
 <tr class="memitem:a2f84d113e0739a775595daf3ae602220" id="r_a2f84d113e0739a775595daf3ae602220"><td class="memItemLeft"><a id="a2f84d113e0739a775595daf3ae602220" name="a2f84d113e0739a775595daf3ae602220"></a>
 void&#160;</td><td class="memItemRight"><b>backRequested</b> ()</td></tr>
+<tr class="memdesc:a2f84d113e0739a775595daf3ae602220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lähetetään, kun käyttäjä haluaa palata takaisin edelliseen näkymään. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2b28474b34a7c018f5fab24fef0adaf" id="r_aa2b28474b34a7c018f5fab24fef0adaf"><td class="memItemLeft"><a id="aa2b28474b34a7c018f5fab24fef0adaf" name="aa2b28474b34a7c018f5fab24fef0adaf"></a>
-&#160;</td><td class="memItemRight"><b>ChooseCard</b> (QWidget *parent=nullptr)</td></tr>
-<tr class="memitem:adc086630dd96dc913948d0c852aa066e" id="r_adc086630dd96dc913948d0c852aa066e"><td class="memItemLeft"><a id="adc086630dd96dc913948d0c852aa066e" name="adc086630dd96dc913948d0c852aa066e"></a>
-void&#160;</td><td class="memItemRight"><b>setUsername</b> (const QString &amp;newUsername)</td></tr>
-<tr class="memitem:ac89c6192eb511884750a67df257881eb" id="r_ac89c6192eb511884750a67df257881eb"><td class="memItemLeft"><a id="ac89c6192eb511884750a67df257881eb" name="ac89c6192eb511884750a67df257881eb"></a>
-void&#160;</td><td class="memItemRight"><b>setChooseCard</b> (const QByteArray &amp;newChooseCard)</td></tr>
+<tr class="memitem:aa2b28474b34a7c018f5fab24fef0adaf" id="r_aa2b28474b34a7c018f5fab24fef0adaf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa2b28474b34a7c018f5fab24fef0adaf">ChooseCard</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa2b28474b34a7c018f5fab24fef0adaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo ChooseCard-dialogin.  <br /></td></tr>
+<tr class="memitem:a472d3d55393804f8625a017921cd9da1" id="r_a472d3d55393804f8625a017921cd9da1"><td class="memItemLeft"><a id="a472d3d55393804f8625a017921cd9da1" name="a472d3d55393804f8625a017921cd9da1"></a>
+&#160;</td><td class="memItemRight"><b>~ChooseCard</b> ()</td></tr>
+<tr class="memdesc:a472d3d55393804f8625a017921cd9da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa ChooseCard-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
+<tr class="memitem:adc086630dd96dc913948d0c852aa066e" id="r_adc086630dd96dc913948d0c852aa066e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adc086630dd96dc913948d0c852aa066e">setUsername</a> (const QString &amp;newUsername)</td></tr>
+<tr class="memdesc:adc086630dd96dc913948d0c852aa066e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa käyttäjänimen, joka välitetään tilitietoikkunalle.  <br /></td></tr>
+<tr class="memitem:ac89c6192eb511884750a67df257881eb" id="r_ac89c6192eb511884750a67df257881eb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac89c6192eb511884750a67df257881eb">setChooseCard</a> (const QByteArray &amp;newChooseCard)</td></tr>
+<tr class="memdesc:ac89c6192eb511884750a67df257881eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa tokenin, jota käytetään backend-kutsuihin.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ikkuna, jossa käyttäjä valitsee debit- tai credit-kortin dual-kortilla. </p>
+<p>Tämä dialogi avataan, kun käyttäjällä on dual-kortti ja hänen täytyy valita, kummalla puolella (debit/credit) hän haluaa jatkaa. Dialogi lähettää valinnan signaalina takaisin MainWindowille. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa2b28474b34a7c018f5fab24fef0adaf" name="aa2b28474b34a7c018f5fab24fef0adaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b28474b34a7c018f5fab24fef0adaf">&#9670;&#160;</a></span>ChooseCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChooseCard::ChooseCard </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Luo ChooseCard-dialogin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Vanhempi QWidget, yleensä nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="abf0e54f0feeb73fda1660e865879fc8c" name="abf0e54f0feeb73fda1660e865879fc8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0e54f0feeb73fda1660e865879fc8c">&#9670;&#160;</a></span>cardSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChooseCard::cardSelected </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lähetetään, kun käyttäjä valitsee debit- tai credit-kortin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Valittu korttityyppi ("debit" tai "credit"). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac89c6192eb511884750a67df257881eb" name="ac89c6192eb511884750a67df257881eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89c6192eb511884750a67df257881eb">&#9670;&#160;</a></span>setChooseCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChooseCard::setChooseCard </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;</td>          <td class="paramname"><span class="paramname"><em>newChooseCard</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa tokenin, jota käytetään backend-kutsuihin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newChooseCard</td><td>Token (JWT tms.) tavutaulukossa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc086630dd96dc913948d0c852aa066e" name="adc086630dd96dc913948d0c852aa066e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc086630dd96dc913948d0c852aa066e">&#9670;&#160;</a></span>setUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChooseCard::setUsername </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>newUsername</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa käyttäjänimen, joka välitetään tilitietoikkunalle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newUsername</td><td>Käyttäjän ID merkkijonona. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="choosecard_8h_source.html">choosecard.h</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__choosecard_8cpp_source.html">moc_choosecard.cpp</a></li>

@@ -91,6 +91,11 @@ $(function(){initNavTree('class_withdraw.html','','class_withdraw-members'); });
   <div class="headertitle"><div class="title">Withdraw Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ikkuna, jossa käyttäjä voi nostaa rahaa tililtään.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="withdraw_8h_source.html">withdraw.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Withdraw:</div>
 <div class="dyncontent">
@@ -102,26 +107,109 @@ Inheritance diagram for Withdraw:</div>
 Signals</h2></td></tr>
 <tr class="memitem:a7e4f70a4f5d287d63e85cce8d899afb2" id="r_a7e4f70a4f5d287d63e85cce8d899afb2"><td class="memItemLeft"><a id="a7e4f70a4f5d287d63e85cce8d899afb2" name="a7e4f70a4f5d287d63e85cce8d899afb2"></a>
 void&#160;</td><td class="memItemRight"><b>withdrawDone</b> ()</td></tr>
+<tr class="memdesc:a7e4f70a4f5d287d63e85cce8d899afb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lähetetään, kun nosto on suoritettu onnistuneesti. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac89d3d31036aecb4e836debd3b3f05da" id="r_ac89d3d31036aecb4e836debd3b3f05da"><td class="memItemLeft"><a id="ac89d3d31036aecb4e836debd3b3f05da" name="ac89d3d31036aecb4e836debd3b3f05da"></a>
-&#160;</td><td class="memItemRight"><b>Withdraw</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:ac89d3d31036aecb4e836debd3b3f05da" id="r_ac89d3d31036aecb4e836debd3b3f05da"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac89d3d31036aecb4e836debd3b3f05da">Withdraw</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:ac89d3d31036aecb4e836debd3b3f05da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo Withdraw-dialogin.  <br /></td></tr>
+<tr class="memitem:a02c17a3c5ddfdf301a8cc1a58cdeb075" id="r_a02c17a3c5ddfdf301a8cc1a58cdeb075"><td class="memItemLeft"><a id="a02c17a3c5ddfdf301a8cc1a58cdeb075" name="a02c17a3c5ddfdf301a8cc1a58cdeb075"></a>
+&#160;</td><td class="memItemRight"><b>~Withdraw</b> ()</td></tr>
+<tr class="memdesc:a02c17a3c5ddfdf301a8cc1a58cdeb075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa Withdraw-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a23ff71a52a107a7ca81f7e2e5940255e" id="r_a23ff71a52a107a7ca81f7e2e5940255e"><td class="memItemLeft"><a id="a23ff71a52a107a7ca81f7e2e5940255e" name="a23ff71a52a107a7ca81f7e2e5940255e"></a>
 QByteArray&#160;</td><td class="memItemRight"><b>token</b></td></tr>
+<tr class="memdesc:a23ff71a52a107a7ca81f7e2e5940255e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend-token nostopyyntöä varten. <br /></td></tr>
 <tr class="memitem:a130f2993f3cf3403993eddf345ff572e" id="r_a130f2993f3cf3403993eddf345ff572e"><td class="memItemLeft"><a id="a130f2993f3cf3403993eddf345ff572e" name="a130f2993f3cf3403993eddf345ff572e"></a>
 int&#160;</td><td class="memItemRight"><b>accountId</b></td></tr>
+<tr class="memdesc:a130f2993f3cf3403993eddf345ff572e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tili, jolta nosto tehdään. <br /></td></tr>
 <tr class="memitem:a0855cae2a5ca84552c75d07cefa027d2" id="r_a0855cae2a5ca84552c75d07cefa027d2"><td class="memItemLeft"><a id="a0855cae2a5ca84552c75d07cefa027d2" name="a0855cae2a5ca84552c75d07cefa027d2"></a>
 QString&#160;</td><td class="memItemRight"><b>balance</b></td></tr>
+<tr class="memdesc:a0855cae2a5ca84552c75d07cefa027d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tilin tämänhetkinen saldo merkkijonona. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a313a15de16f7a4e4f3b7c868b71ff0af" id="r_a313a15de16f7a4e4f3b7c868b71ff0af"><td class="memItemLeft"><a id="a313a15de16f7a4e4f3b7c868b71ff0af" name="a313a15de16f7a4e4f3b7c868b71ff0af"></a>
-void&#160;</td><td class="memItemRight"><b>showEvent</b> (QShowEvent *event) override</td></tr>
+<tr class="memitem:a313a15de16f7a4e4f3b7c868b71ff0af" id="r_a313a15de16f7a4e4f3b7c868b71ff0af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a313a15de16f7a4e4f3b7c868b71ff0af">showEvent</a> (QShowEvent *event) override</td></tr>
+<tr class="memdesc:a313a15de16f7a4e4f3b7c868b71ff0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suoritetaan, kun dialogi näytetään ensimmäisen kerran.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ikkuna, jossa käyttäjä voi nostaa rahaa tililtään. </p>
+<p>Withdraw-dialogi mahdollistaa:</p><ul>
+<li>valmiiden nostosummien valitsemisen (20–100 €)</li>
+<li>noston lähettämisen backendille</li>
+<li>saldon näyttämisen</li>
+<li>onnistuneen noston ilmoittamisen signaalilla </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac89d3d31036aecb4e836debd3b3f05da" name="ac89d3d31036aecb4e836debd3b3f05da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89d3d31036aecb4e836debd3b3f05da">&#9670;&#160;</a></span>Withdraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Withdraw::Withdraw </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Luo Withdraw-dialogin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Vanhempi QWidget, yleensä nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a313a15de16f7a4e4f3b7c868b71ff0af" name="a313a15de16f7a4e4f3b7c868b71ff0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313a15de16f7a4e4f3b7c868b71ff0af">&#9670;&#160;</a></span>showEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Withdraw::showEvent </td>
+          <td>(</td>
+          <td class="paramtype">QShowEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suoritetaan, kun dialogi näytetään ensimmäisen kerran. </p>
+<p>Tätä käytetään esimerkiksi saldon päivittämiseen automaattisesti. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Näyttötapahtuma. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="withdraw_8h_source.html">withdraw.h</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__withdraw_8cpp_source.html">moc_withdraw.cpp</a></li>

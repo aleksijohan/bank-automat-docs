@@ -91,6 +91,11 @@ $(function(){initNavTree('class_main_window.html','','class_main_window-members'
   <div class="headertitle"><div class="title">MainWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Sovelluksen pääikkuna, joka vastaa kirjautumisesta ja inaktiivisuuden hallinnasta.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MainWindow:</div>
 <div class="dyncontent">
@@ -100,16 +105,134 @@ Inheritance diagram for MainWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft"><a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
-&#160;</td><td class="memItemRight"><b>MainWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo MainWindow-olion ja alustaa käyttöliittymän sekä ajastimet.  <br /></td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7" id="r_ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft"><a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+&#160;</td><td class="memItemRight"><b>~MainWindow</b> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa MainWindow-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aeaecedc36266ab4571b7af2a9fcd5b08" id="r_aeaecedc36266ab4571b7af2a9fcd5b08"><td class="memItemLeft"><a id="aeaecedc36266ab4571b7af2a9fcd5b08" name="aeaecedc36266ab4571b7af2a9fcd5b08"></a>
-bool&#160;</td><td class="memItemRight"><b>eventFilter</b> (QObject *obj, QEvent *event) override</td></tr>
-<tr class="memitem:a05fb9d72c044aa3bb7d187b994704e2f" id="r_a05fb9d72c044aa3bb7d187b994704e2f"><td class="memItemLeft"><a id="a05fb9d72c044aa3bb7d187b994704e2f" name="a05fb9d72c044aa3bb7d187b994704e2f"></a>
-void&#160;</td><td class="memItemRight"><b>closeEvent</b> (QCloseEvent *event) override</td></tr>
+<tr class="memitem:aeaecedc36266ab4571b7af2a9fcd5b08" id="r_aeaecedc36266ab4571b7af2a9fcd5b08"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aeaecedc36266ab4571b7af2a9fcd5b08">eventFilter</a> (QObject *obj, QEvent *event) override</td></tr>
+<tr class="memdesc:aeaecedc36266ab4571b7af2a9fcd5b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kuuntelee hiiren ja näppäimistön tapahtumia.  <br /></td></tr>
+<tr class="memitem:a05fb9d72c044aa3bb7d187b994704e2f" id="r_a05fb9d72c044aa3bb7d187b994704e2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a05fb9d72c044aa3bb7d187b994704e2f">closeEvent</a> (QCloseEvent *event) override</td></tr>
+<tr class="memdesc:a05fb9d72c044aa3bb7d187b994704e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sulkee koko sovelluksen, kun pääikkuna suljetaan.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sovelluksen pääikkuna, joka vastaa kirjautumisesta ja inaktiivisuuden hallinnasta. </p>
+<p><a class="el" href="class_main_window.html" title="Sovelluksen pääikkuna, joka vastaa kirjautumisesta ja inaktiivisuuden hallinnasta.">MainWindow</a> hoitaa:</p><ul>
+<li>käyttäjän kirjautumisen backendin kautta</li>
+<li>inaktiivisuusajastimet (10s ja 30s)</li>
+<li>hiiren ja näppäimistön tapahtumien kuuntelun</li>
+<li>debit/credit/dual-korttien käsittelyn</li>
+<li>tilitietoikkunan avaamisen onnistuneen kirjautumisen jälkeen </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Luo MainWindow-olion ja alustaa käyttöliittymän sekä ajastimet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Vanhempi QWidget.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Konstruktorissa:</p><ul>
+<li>alustetaan UI</li>
+<li>luodaan 30s ja 10s inaktiivisuusajastimet</li>
+<li>yhdistetään signaalit login-nappiin ja Enter-painallukseen</li>
+<li>asennetaan event filter hiiren ja näppäimistön seuraamiseksi </li>
+</ul>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a05fb9d72c044aa3bb7d187b994704e2f" name="a05fb9d72c044aa3bb7d187b994704e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05fb9d72c044aa3bb7d187b994704e2f">&#9670;&#160;</a></span>closeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::closeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QCloseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sulkee koko sovelluksen, kun pääikkuna suljetaan. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Sulkemistapahtuma. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeaecedc36266ab4571b7af2a9fcd5b08" name="aeaecedc36266ab4571b7af2a9fcd5b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaecedc36266ab4571b7af2a9fcd5b08">&#9670;&#160;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Kuuntelee hiiren ja näppäimistön tapahtumia. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Tapahtuman kohdeobjekti. </td></tr>
+    <tr><td class="paramname">event</td><td>Tapahtuma (hiiri, näppäimistö). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jos tapahtuma käsiteltiin, muuten false.</dd></dl>
+<p>Tämän avulla nollataan inaktiivisuusajastimet aina kun käyttäjä tekee jotain. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
 <li><b>mainwindow.cpp</b></li>

@@ -91,6 +91,11 @@ $(function(){initNavTree('class_deposit.html','','class_deposit-members'); });
   <div class="headertitle"><div class="title">Deposit Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ikkuna, jossa käyttäjä voi tallettaa rahaa valitsemalleen tilille.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="deposit_8h_source.html">deposit.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Deposit:</div>
 <div class="dyncontent">
@@ -102,16 +107,113 @@ Inheritance diagram for Deposit:</div>
 Signals</h2></td></tr>
 <tr class="memitem:a16eaa366d1830989b546f31b04af10b0" id="r_a16eaa366d1830989b546f31b04af10b0"><td class="memItemLeft"><a id="a16eaa366d1830989b546f31b04af10b0" name="a16eaa366d1830989b546f31b04af10b0"></a>
 void&#160;</td><td class="memItemRight"><b>depositSuccessful</b> ()</td></tr>
+<tr class="memdesc:a16eaa366d1830989b546f31b04af10b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lähetetään, kun talletus on suoritettu onnistuneesti. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a363f1781f53ff8b767eeb271cb2ec11e" id="r_a363f1781f53ff8b767eeb271cb2ec11e"><td class="memItemLeft"><a id="a363f1781f53ff8b767eeb271cb2ec11e" name="a363f1781f53ff8b767eeb271cb2ec11e"></a>
-&#160;</td><td class="memItemRight"><b>Deposit</b> (QWidget *parent=nullptr)</td></tr>
-<tr class="memitem:a8b1cf7a9125e5adb077ba2f2935fe1b9" id="r_a8b1cf7a9125e5adb077ba2f2935fe1b9"><td class="memItemLeft"><a id="a8b1cf7a9125e5adb077ba2f2935fe1b9" name="a8b1cf7a9125e5adb077ba2f2935fe1b9"></a>
-void&#160;</td><td class="memItemRight"><b>setToken</b> (const QString &amp;t)</td></tr>
-<tr class="memitem:a9c5b1b972f5546d142d5457d1d462170" id="r_a9c5b1b972f5546d142d5457d1d462170"><td class="memItemLeft"><a id="a9c5b1b972f5546d142d5457d1d462170" name="a9c5b1b972f5546d142d5457d1d462170"></a>
-void&#160;</td><td class="memItemRight"><b>setAccountId</b> (int id)</td></tr>
+<tr class="memitem:a363f1781f53ff8b767eeb271cb2ec11e" id="r_a363f1781f53ff8b767eeb271cb2ec11e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a363f1781f53ff8b767eeb271cb2ec11e">Deposit</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a363f1781f53ff8b767eeb271cb2ec11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo Deposit-dialogin.  <br /></td></tr>
+<tr class="memitem:aa36e2a07cf0f693194bc7cb1ce2e9aa9" id="r_aa36e2a07cf0f693194bc7cb1ce2e9aa9"><td class="memItemLeft"><a id="aa36e2a07cf0f693194bc7cb1ce2e9aa9" name="aa36e2a07cf0f693194bc7cb1ce2e9aa9"></a>
+&#160;</td><td class="memItemRight"><b>~Deposit</b> ()</td></tr>
+<tr class="memdesc:aa36e2a07cf0f693194bc7cb1ce2e9aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa Deposit-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
+<tr class="memitem:a8b1cf7a9125e5adb077ba2f2935fe1b9" id="r_a8b1cf7a9125e5adb077ba2f2935fe1b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8b1cf7a9125e5adb077ba2f2935fe1b9">setToken</a> (const QString &amp;t)</td></tr>
+<tr class="memdesc:a8b1cf7a9125e5adb077ba2f2935fe1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa backend-tokenin, jota käytetään talletuspyynnössä.  <br /></td></tr>
+<tr class="memitem:a9c5b1b972f5546d142d5457d1d462170" id="r_a9c5b1b972f5546d142d5457d1d462170"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9c5b1b972f5546d142d5457d1d462170">setAccountId</a> (int id)</td></tr>
+<tr class="memdesc:a9c5b1b972f5546d142d5457d1d462170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asettaa tilin ID:n, jolle talletus tehdään.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ikkuna, jossa käyttäjä voi tallettaa rahaa valitsemalleen tilille. </p>
+<p>Deposit-dialogi mahdollistaa:</p><ul>
+<li>talletussumman kasvattamisen valmiilla painikkeilla (5–500 €)</li>
+<li>summan nollaamisen</li>
+<li>talletuksen lähettämisen backendille</li>
+<li>onnistuneen talletuksen ilmoittamisen signaalilla </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a363f1781f53ff8b767eeb271cb2ec11e" name="a363f1781f53ff8b767eeb271cb2ec11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363f1781f53ff8b767eeb271cb2ec11e">&#9670;&#160;</a></span>Deposit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deposit::Deposit </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Luo Deposit-dialogin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Vanhempi QWidget, yleensä nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a9c5b1b972f5546d142d5457d1d462170" name="a9c5b1b972f5546d142d5457d1d462170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5b1b972f5546d142d5457d1d462170">&#9670;&#160;</a></span>setAccountId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deposit::setAccountId </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa tilin ID:n, jolle talletus tehdään. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Tilin tunniste. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b1cf7a9125e5adb077ba2f2935fe1b9" name="a8b1cf7a9125e5adb077ba2f2935fe1b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1cf7a9125e5adb077ba2f2935fe1b9">&#9670;&#160;</a></span>setToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deposit::setToken </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Asettaa backend-tokenin, jota käytetään talletuspyynnössä. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Token merkkijonona. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="deposit_8h_source.html">deposit.h</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__deposit_8cpp_source.html">moc_deposit.cpp</a></li>

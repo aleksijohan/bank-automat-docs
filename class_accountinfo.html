@@ -159,14 +159,12 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Luo Accountinfo-dialogin. </p>
-<p>Accountinfo-luokan konstruktori.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Vanhempi widget, yleensä <a class="el" href="class_main_window.html">MainWindow</a>.</td></tr>
+    <tr><td class="paramname">parent</td><td>Vanhempi widget, yleensä <a class="el" href="class_main_window.html" title="Sovelluksen pääikkuna, joka vastaa kirjautumisesta ja inaktiivisuuden hallinnasta.">MainWindow</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Alustaa käyttöliittymän ja yhdistää painikkeet niiden vastaaviin slotteihin (henkilötiedot, nosto, talletus, siirto). </p>
 
 </div>
 </div>
@@ -195,7 +193,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lähetetään, kun käyttäjä haluaa palata takaisin. </p>
-<p><a class="el" href="class_main_window.html">MainWindow</a> kuuntelee tätä signaalia ja näyttää itsensä uudelleen. </p>
+<p><a class="el" href="class_main_window.html" title="Sovelluksen pääikkuna, joka vastaa kirjautumisesta ja inaktiivisuuden hallinnasta.">MainWindow</a> kuuntelee tätä signaalia ja näyttää itsensä uudelleen. </p>
 
 </div>
 </div>
@@ -215,11 +213,9 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Asettaa tilin JSON-datan ja täyttää käyttöliittymän kentät. </p>
-<p>Täyttää käyttöliittymän tilin JSON-datalla.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>JSON-olio, joka sisältää tilin tiedot (saldo, tilinumero, jne.).</td></tr>
-    <tr><td class="paramname">obj</td><td>JSON-olio, joka sisältää tilin tiedot. </td></tr>
+    <tr><td class="paramname">obj</td><td>JSON-olio, joka sisältää tilin tiedot (saldo, tilinumero, jne.). </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,7 +288,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Asettaa JWT-tokenin UI-käyttöä varten. </p>
-<p>Asettaa JWT-tokenin, jota käytetään aliluokkien (Withdraw/Deposit/Transfer) API-kutsuissa.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newToken</td><td>Token, jota käytetään API-kutsuissa.</td></tr>
@@ -319,7 +314,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Asettaa käyttäjän ID:n tekstimuodossa. </p>
-<p>Asettaa käyttäjän ID:n merkkijonona.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newUsername</td><td>Käyttäjän ID merkkijonona. </td></tr>
@@ -353,15 +347,13 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Suoritetaan aina, kun ikkuna näytetään. </p>
-<p>Suoritetaan aina, kun Accountinfo-ikkuna näytetään.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Qt:n showEvent-tapahtuma.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Tätä käytetään esimerkiksi saldon päivittämiseen aina, kun käyttäjä palaa tähän näkymään.</p>
-<p>Hakee tilin ajantasaiset tiedot backendiltä ja päivittää UI:n. </p>
+<p>Tätä käytetään esimerkiksi saldon päivittämiseen aina, kun käyttäjä palaa tähän näkymään. </p>
 
 </div>
 </div>
