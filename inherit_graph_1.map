@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,132,74,159"/>
+<area shape="rect" id="Node000001" href="$class_accountinfo.html" title="Näyttää käyttäjän tilitiedot ja tarjoaa toiminnot (nosto, talletus, siirto)." alt="" coords="124,5,214,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="55,118,83,80,120,42,140,31,137,35,123,46,87,83,60,120"/>
+<area shape="rect" id="Node000002" href="$class_choose_card.html" title="Ikkuna, jossa käyttäjä valitsee debit&#45; tai credit&#45;kortin dual&#45;kortilla." alt="" coords="122,56,216,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="73,121,120,92,144,81,140,85,123,97,77,125"/>
+<area shape="rect" id="Node000003" href="$class_data.html" title="Dialogi, joka näyttää käyttäjän perustiedot JSON&#45;datasta." alt="" coords="144,107,194,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="87,133,146,123,142,127,90,138"/>
+<area shape="rect" id="Node000004" href="$class_deposit.html" title="Ikkuna, jossa käyttäjä voi tallettaa rahaa valitsemalleen tilille." alt="" coords="136,157,202,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="89,152,138,163,133,166,90,158"/>
+<area shape="rect" id="Node000005" href="$class_withdraw.html" title="Ikkuna, jossa käyttäjä voi nostaa rahaa tililtään." alt="" coords="131,208,207,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="75,165,123,194,144,207,139,208,120,198,75,170"/>
+<area shape="rect" id="Node000006" href="$classtransfer.html" title="Ikkuna, jossa käyttäjä voi siirtää rahaa omalta tililtään toiselle tilille." alt="" coords="136,259,202,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="58,169,87,207,123,245,141,258,136,258,120,249,83,211,57,174"/>
+</map>

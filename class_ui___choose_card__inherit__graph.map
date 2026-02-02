@@ -1,0 +1,5 @@
+<map id="Ui_ChooseCard" name="Ui_ChooseCard">
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,5,120,32"/>
+<area shape="rect" id="Node000002" href="$class_ui_1_1_choose_card.html" title=" " alt="" coords="5,80,121,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,46,66,80,60,79,61,50"/>
+</map>

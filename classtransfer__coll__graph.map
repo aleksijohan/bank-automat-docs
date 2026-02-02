@@ -1,0 +1,5 @@
+<map id="transfer" name="transfer">
+<area shape="rect" id="Node000001" title="Ikkuna, jossa käyttäjä voi siirtää rahaa omalta tililtään toiselle tilille." alt="" coords="7,80,72,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,74,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,46,42,80,37,79,37,50"/>
+</map>
