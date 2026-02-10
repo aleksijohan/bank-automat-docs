@@ -1,0 +1,5 @@
+<map id="ApiClient::get" name="ApiClient::get">
+<area shape="rect" id="Node000001" title="Suorittaa GET&#45;pyynnön annetulle endpointille." alt="" coords="5,5,106,32"/>
+<area shape="rect" id="Node000002" href="$class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="154,5,305,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,16,141,18,136,19,106,21"/>
+</map>

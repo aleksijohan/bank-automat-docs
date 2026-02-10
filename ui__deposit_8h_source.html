@@ -105,142 +105,176 @@ $(function(){initNavTree('ui__deposit_8h_source.html','',''); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QtCore/QVariant&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QtWidgets/QApplication&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QtWidgets/QDialog&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QtWidgets/QLabel&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QtWidgets/QPushButton&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QtWidgets/QSpacerItem&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QtWidgets/QVBoxLayout&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QtWidgets/QGridLayout&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QtWidgets/QHBoxLayout&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QtWidgets/QLabel&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QtWidgets/QPushButton&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;QtWidgets/QSpacerItem&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;QtWidgets/QVBoxLayout&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_ui___deposit.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_ui___deposit.html">Ui_Deposit</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    QVBoxLayout *verticalLayout;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    QPushButton *btnDepositBack;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    QLabel *labelAmount;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    QLabel *labelAddedAmount;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    QPushButton *btnNewDeposit;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    QPushButton *btnReset;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    QSpacerItem *horizontalSpacer;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QPushButton *btnAddFive;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    QPushButton *btnAddTen;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QPushButton *btnAddTwenty;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QPushButton *btnAddFifty;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    QPushButton *btnAddHundred;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QPushButton *btnAddTwoHundred;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QPushButton *btnAddFiveHundred;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> setupUi(QDialog *<a class="code hl_class" href="class_deposit.html">Deposit</a>)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;objectName().isEmpty())</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setObjectName(<span class="stringliteral">&quot;Deposit&quot;</span>);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;resize(435, 497);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        QFont font;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        font.setPointSize(15);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setFont(font);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        verticalLayout = <span class="keyword">new</span> QVBoxLayout(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        verticalLayout-&gt;setObjectName(<span class="stringliteral">&quot;verticalLayout&quot;</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        btnDepositBack = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        btnDepositBack-&gt;setObjectName(<span class="stringliteral">&quot;btnDepositBack&quot;</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        verticalLayout-&gt;addWidget(btnDepositBack);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        labelAmount = <span class="keyword">new</span> QLabel(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        labelAmount-&gt;setObjectName(<span class="stringliteral">&quot;labelAmount&quot;</span>);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        verticalLayout-&gt;addWidget(labelAmount, 0, Qt::AlignmentFlag::AlignHCenter);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        labelAddedAmount = <span class="keyword">new</span> QLabel(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        labelAddedAmount-&gt;setObjectName(<span class="stringliteral">&quot;labelAddedAmount&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_ui___deposit.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_ui___deposit.html">Ui_Deposit</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    QVBoxLayout *verticalLayout;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    QHBoxLayout *topBar;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    QPushButton *btnDepositBack;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    QSpacerItem *horizontalSpacer;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    QLabel *labelAmount;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QLabel *labelAddedAmount;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    QHBoxLayout *actionButtons;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QPushButton *btnNewDeposit;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QPushButton *btnReset;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    QGridLayout *addButtonsGrid;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QPushButton *btnAddFive;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QPushButton *btnAddTen;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    QPushButton *btnAddTwenty;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QPushButton *btnAddFifty;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    QPushButton *btnAddHundred;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    QPushButton *btnAddTwoHundred;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    QPushButton *btnAddFiveHundred;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QSpacerItem *verticalSpacer;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> setupUi(QDialog *<a class="code hl_class" href="class_deposit.html">Deposit</a>)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;objectName().isEmpty())</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setObjectName(<span class="stringliteral">&quot;Deposit&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;resize(720, 620);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setMinimumSize(QSize(600, 500));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        verticalLayout = <span class="keyword">new</span> QVBoxLayout(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        verticalLayout-&gt;setSpacing(20);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        verticalLayout-&gt;setObjectName(<span class="stringliteral">&quot;verticalLayout&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        verticalLayout-&gt;setContentsMargins(40, 30, 40, 40);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        topBar = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        topBar-&gt;setObjectName(<span class="stringliteral">&quot;topBar&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        btnDepositBack = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        btnDepositBack-&gt;setObjectName(<span class="stringliteral">&quot;btnDepositBack&quot;</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        topBar-&gt;addWidget(btnDepositBack);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        verticalLayout-&gt;addWidget(labelAddedAmount, 0, Qt::AlignmentFlag::AlignHCenter);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        horizontalSpacer = <span class="keyword">new</span> QSpacerItem(0, 0, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        btnNewDeposit = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        btnNewDeposit-&gt;setObjectName(<span class="stringliteral">&quot;btnNewDeposit&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        topBar-&gt;addItem(horizontalSpacer);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        verticalLayout-&gt;addWidget(btnNewDeposit);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        verticalLayout-&gt;addLayout(topBar);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        btnReset = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        btnReset-&gt;setObjectName(<span class="stringliteral">&quot;btnReset&quot;</span>);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        verticalLayout-&gt;addWidget(btnReset);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        horizontalSpacer = <span class="keyword">new</span> QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        verticalLayout-&gt;addItem(horizontalSpacer);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        btnAddFive = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        btnAddFive-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFive&quot;</span>);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        verticalLayout-&gt;addWidget(btnAddFive);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        btnAddTen = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        btnAddTen-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTen&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        labelAmount = <span class="keyword">new</span> QLabel(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        labelAmount-&gt;setObjectName(<span class="stringliteral">&quot;labelAmount&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        QFont font;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        font.setPointSize(21);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        labelAmount-&gt;setFont(font);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        verticalLayout-&gt;addWidget(labelAmount, 0, Qt::AlignCenter);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        labelAddedAmount = <span class="keyword">new</span> QLabel(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        labelAddedAmount-&gt;setObjectName(<span class="stringliteral">&quot;labelAddedAmount&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        QFont font1;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        font1.setPointSize(48);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        labelAddedAmount-&gt;setFont(font1);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        labelAddedAmount-&gt;setStyleSheet(QString::fromUtf8(<span class="stringliteral">&quot;color: #00FF88;&quot;</span>));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        verticalLayout-&gt;addWidget(labelAddedAmount, 0, Qt::AlignCenter);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        verticalLayout-&gt;addWidget(btnAddTen);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        btnAddTwenty = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        btnAddTwenty-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTwenty&quot;</span>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        verticalLayout-&gt;addWidget(btnAddTwenty);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        btnAddFifty = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        btnAddFifty-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFifty&quot;</span>);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        verticalLayout-&gt;addWidget(btnAddFifty);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        btnAddHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        btnAddHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddHundred&quot;</span>);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        verticalLayout-&gt;addWidget(btnAddHundred);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        btnAddTwoHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        btnAddTwoHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTwoHundred&quot;</span>);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        verticalLayout-&gt;addWidget(btnAddTwoHundred);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        actionButtons = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        actionButtons-&gt;setSpacing(25);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        actionButtons-&gt;setObjectName(<span class="stringliteral">&quot;actionButtons&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        btnNewDeposit = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        btnNewDeposit-&gt;setObjectName(<span class="stringliteral">&quot;btnNewDeposit&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        actionButtons-&gt;addWidget(btnNewDeposit);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        btnReset = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        btnReset-&gt;setObjectName(<span class="stringliteral">&quot;btnReset&quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        actionButtons-&gt;addWidget(btnReset);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        verticalLayout-&gt;addLayout(actionButtons);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        addButtonsGrid = <span class="keyword">new</span> QGridLayout();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        addButtonsGrid-&gt;setSpacing(15);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        addButtonsGrid-&gt;setObjectName(<span class="stringliteral">&quot;addButtonsGrid&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        btnAddFive = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        btnAddFive-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFive&quot;</span>);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        btnAddFiveHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        btnAddFiveHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFiveHundred&quot;</span>);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        verticalLayout-&gt;addWidget(btnAddFiveHundred);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        addButtonsGrid-&gt;addWidget(btnAddFive, 0, 0, 1, 1);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        btnAddTen = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        btnAddTen-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTen&quot;</span>);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        retranslateUi(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        QMetaObject::connectSlotsByName(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    } <span class="comment">// setupUi</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> retranslateUi(QDialog *<a class="code hl_class" href="class_deposit.html">Deposit</a>)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setWindowTitle(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Talletus&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        btnDepositBack-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Paluu&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        labelAmount-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Sy\303\266tetty summa:&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        labelAddedAmount-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;0 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        btnNewDeposit-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Talleta&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        btnReset-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Nollaa&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        btnAddFive-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;5\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        btnAddTen-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;10\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        btnAddTwenty-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;20\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        btnAddFifty-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;50\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        btnAddHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;100\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        btnAddTwoHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;200\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        btnAddFiveHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;500\342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    } <span class="comment">// retranslateUi</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>};</div>
-</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        addButtonsGrid-&gt;addWidget(btnAddTen, 0, 1, 1, 1);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        btnAddTwenty = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        btnAddTwenty-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTwenty&quot;</span>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        addButtonsGrid-&gt;addWidget(btnAddTwenty, 1, 0, 1, 1);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        btnAddFifty = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        btnAddFifty-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFifty&quot;</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        addButtonsGrid-&gt;addWidget(btnAddFifty, 1, 1, 1, 1);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        btnAddHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        btnAddHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddHundred&quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        addButtonsGrid-&gt;addWidget(btnAddHundred, 2, 0, 1, 1);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        btnAddTwoHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        btnAddTwoHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddTwoHundred&quot;</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        addButtonsGrid-&gt;addWidget(btnAddTwoHundred, 2, 1, 1, 1);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        btnAddFiveHundred = <span class="keyword">new</span> QPushButton(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        btnAddFiveHundred-&gt;setObjectName(<span class="stringliteral">&quot;btnAddFiveHundred&quot;</span>);</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_ui_1_1_deposit.html">  140</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_deposit.html">Deposit</a>: <span class="keyword">public</span> <a class="code hl_class" href="class_ui___deposit.html">Ui_Deposit</a> {};</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>} <span class="comment">// namespace Ui</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>QT_END_NAMESPACE</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif </span><span class="comment">// UI_DEPOSIT_H</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        addButtonsGrid-&gt;addWidget(btnAddFiveHundred, 3, 0, 1, 2);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        verticalLayout-&gt;addLayout(addButtonsGrid);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        verticalSpacer = <span class="keyword">new</span> QSpacerItem(0, 0, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        verticalLayout-&gt;addItem(verticalSpacer);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        retranslateUi(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        QMetaObject::connectSlotsByName(<a class="code hl_class" href="class_deposit.html">Deposit</a>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    } <span class="comment">// setupUi</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">void</span> retranslateUi(QDialog *<a class="code hl_class" href="class_deposit.html">Deposit</a>)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <a class="code hl_class" href="class_deposit.html">Deposit</a>-&gt;setWindowTitle(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Talletus&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        btnDepositBack-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Paluu&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        labelAmount-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Sy\303\266tetty summa:&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        labelAddedAmount-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;0 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        btnNewDeposit-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Talleta&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        btnReset-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;Nollaa&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        btnAddFive-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+5 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        btnAddTen-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+10 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        btnAddTwenty-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+20 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        btnAddFifty-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+50 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        btnAddHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+100 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        btnAddTwoHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+200 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        btnAddFiveHundred-&gt;setText(QCoreApplication::translate(<span class="stringliteral">&quot;Deposit&quot;</span>, <span class="stringliteral">&quot;+500 \342\202\254&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    } <span class="comment">// retranslateUi</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>};</div>
+</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_ui_1_1_deposit.html">  174</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_ui_1_1_deposit.html">Deposit</a>: <span class="keyword">public</span> <a class="code hl_class" href="class_ui___deposit.html">Ui_Deposit</a> {};</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>} <span class="comment">// namespace Ui</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>QT_END_NAMESPACE</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#endif </span><span class="comment">// UI_DEPOSIT_H</span></div>
 <div class="ttc" id="aclass_deposit_html"><div class="ttname"><a href="class_deposit.html">Deposit</a></div><div class="ttdoc">Ikkuna, jossa käyttäjä voi tallettaa rahaa valitsemalleen tilille.</div><div class="ttdef"><b>Definition</b> deposit.h:21</div></div>
-<div class="ttc" id="aclass_ui_1_1_deposit_html"><div class="ttname"><a href="class_ui_1_1_deposit.html">Ui::Deposit</a></div><div class="ttdef"><b>Definition</b> ui_deposit.h:140</div></div>
-<div class="ttc" id="aclass_ui___deposit_html"><div class="ttname"><a href="class_ui___deposit.html">Ui_Deposit</a></div><div class="ttdef"><b>Definition</b> ui_deposit.h:23</div></div>
+<div class="ttc" id="aclass_ui_1_1_deposit_html"><div class="ttname"><a href="class_ui_1_1_deposit.html">Ui::Deposit</a></div><div class="ttdef"><b>Definition</b> ui_deposit.h:174</div></div>
+<div class="ttc" id="aclass_ui___deposit_html"><div class="ttname"><a href="class_ui___deposit.html">Ui_Deposit</a></div><div class="ttdef"><b>Definition</b> ui_deposit.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

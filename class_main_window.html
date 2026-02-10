@@ -121,9 +121,8 @@ Collaboration diagram for MainWindow:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
 <tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Luo MainWindow-olion ja alustaa käyttöliittymän sekä ajastimet.  <br /></td></tr>
-<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7" id="r_ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft"><a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
-&#160;</td><td class="memItemRight"><b>~MainWindow</b> ()</td></tr>
-<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa MainWindow-olion ja vapauttaa käyttöliittymän. <br /></td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7" id="r_ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuhoaa MainWindow-olion ja vapauttaa käyttöliittymän.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -158,6 +157,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Luo MainWindow-olion ja alustaa käyttöliittymän sekä ajastimet. </p>
+<p>Alustaa ajastimet ja signaalit.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parent</td><td>Vanhempi QWidget.</td></tr>
@@ -179,6 +179,27 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="64,28,59,21,63,11,75,5,95,3,117,5,129,14,124,14,115,10,95,8,76,10,66,15,64,20,69,29"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98d00a93bc118200eeef9f9bba1dba7">&#9670;&#160;</a></span>~MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tuhoaa MainWindow-olion ja vapauttaa käyttöliittymän. </p>
+<p>Event filter hiiren ja näppäimistön liikkeille.</p>
+<p>Nollaa inactivityTimerin aina kun käyttäjä tekee jotain. Jos kirjautumiskentissä on tekstiä, käynnistyy myös 10s login-ajastin </p>
 
 </div>
 </div>

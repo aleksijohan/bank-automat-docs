@@ -223,20 +223,28 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa JSON-datan ja päivittää UI-elementit. </p>
+<p>Asettaa ja parsii käyttäjän tiedot backendistä.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newTestData</td><td>JSON-data QByteArray-muodossa.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Funktio parsii JSON-datan ja asettaa käyttöliittymän kentät. Jos data on virheellistä tai avaimia puuttuu, käytetään fallback-arvoa "Ei dataa". </p>
+<p>Funktio parsii JSON-datan ja asettaa käyttöliittymän kentät. Jos data on virheellistä tai avaimia puuttuu, käytetään fallback-arvoa "Ei dataa".</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newTestData</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Jos JSON on virheellinen tai avaimia puuttuu näytetään teksti "Ei dataa". </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="data_8h_source.html">data.h</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__data_8cpp_source.html">moc_data.cpp</a></li>
-<li><b>data.cpp</b></li>
+<li><a class="el" href="data_8cpp.html">data.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

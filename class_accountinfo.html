@@ -236,9 +236,11 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa tilin JSON-datan ja täyttää käyttöliittymän kentät. </p>
+<p>Asettaa tilin tiedot UI:hin backendin vastauksesta.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>JSON-olio, joka sisältää tilin tiedot (saldo, tilinumero, jne.). </td></tr>
+    <tr><td class="paramname">obj</td><td>JSON-olio, joka sisältää tilin tiedot (saldo, tilinumero, jne.).</td></tr>
+    <tr><td class="paramname">obj</td><td>QJsonObject /bank_account/{user}/{type} -kutsusta. </td></tr>
   </table>
   </dd>
 </dl>
@@ -261,6 +263,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa tilin ID:n. </p>
+<p>Asettaa tilin ID:n (käytetään mm. refreshBalance() ja <a class="el" href="class_transactions.html" title="Näyttää käyttäjän tilitapahtumat.">Transactions</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Tilin yksilöllinen tunniste backendissä. </td></tr>
@@ -286,6 +289,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa tilin tyypin (debit/credit). </p>
+<p>Asettaa tilin tyypin.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>Tilin tyyppi merkkijonona. </td></tr>
@@ -311,6 +315,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa JWT-tokenin UI-käyttöä varten. </p>
+<p>Asettaa JWT-toknein.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newToken</td><td>Token, jota käytetään API-kutsuissa.</td></tr>
@@ -337,6 +342,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Asettaa käyttäjän ID:n tekstimuodossa. </p>
+<p>Asettaa käyttäjän ID:N.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newUsername</td><td>Käyttäjän ID merkkijonona. </td></tr>
@@ -370,13 +376,15 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Suoritetaan aina, kun ikkuna näytetään. </p>
+<p>Kutsutaan aina kun ikkuna avataan.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Qt:n showEvent-tapahtuma.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Tätä käytetään esimerkiksi saldon päivittämiseen aina, kun käyttäjä palaa tähän näkymään. </p>
+<p>Tätä käytetään esimerkiksi saldon päivittämiseen aina, kun käyttäjä palaa tähän näkymään.</p>
+<p>Hakee tuoreimmat tilin tiedot backendistä ja päivittää UI:n. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -389,6 +397,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="169,67,234,69,229,70,169,72"/>
 <area shape="rect" href="class_accountinfo.html#a3f83ececc71de3ec2ab446ee8510da49" title="Asettaa tilin JSON&#45;datan ja täyttää käyttöliittymän kentät." alt="" coords="217,107,409,133"/>
 <area shape="poly" title=" " alt="" coords="150,81,238,102,233,104,150,86"/>
+<area shape="rect" href="class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="457,5,608,32"/>
+<area shape="poly" title=" " alt="" coords="363,16,444,18,439,19,364,21"/>
 </map>
 </div>
 
@@ -396,7 +406,7 @@ Here is the call graph for this function:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="accountinfo_8h_source.html">accountinfo.h</a></li>
-<li><b>accountinfo.cpp</b></li>
+<li><a class="el" href="accountinfo_8cpp.html">accountinfo.cpp</a></li>
 <li>build/Desktop_Qt_6_8_3_MinGW_64_bit-Debug/bank_automat_autogen/EWIEGA46WW/<a class="el" href="moc__accountinfo_8cpp_source.html">moc_accountinfo.cpp</a></li>
 </ul>
 </div><!-- contents -->

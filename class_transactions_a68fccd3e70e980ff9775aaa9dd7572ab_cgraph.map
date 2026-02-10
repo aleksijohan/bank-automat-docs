@@ -1,0 +1,9 @@
+<map id="Transactions::updateLogs" name="Transactions::updateLogs">
+<area shape="rect" id="Node000001" title="Haetaan tilitapahtumat backendistä ja päivittää taulukkonäkymän." alt="" coords="5,31,177,57"/>
+<area shape="rect" id="Node000002" href="$class_api_client.html#a097acc160820ebc24ef692bc1c10e0fb" title="Suorittaa GET&#45;pyynnön annetulle endpointille." alt="" coords="240,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,30,227,26,222,28,177,36"/>
+<area shape="rect" id="Node000004" href="$class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021" title="Palauttaa ApiClientin singleton&#45;instanssin." alt="" coords="225,56,356,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,52,212,59,206,59,177,58"/>
+<area shape="rect" id="Node000003" href="$class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="404,5,555,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,16,391,18,386,19,341,21"/>
+</map>

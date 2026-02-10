@@ -2,8 +2,10 @@
 <area shape="rect" id="Node000001" title="Suoritetaan aina, kun ikkuna näytetään." alt="" coords="5,56,169,83"/>
 <area shape="rect" id="Node000002" href="$class_api_client.html#a097acc160820ebc24ef692bc1c10e0fb" title="Suorittaa GET&#45;pyynnön annetulle endpointille." alt="" coords="263,5,363,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,53,249,32,245,35,151,58"/>
-<area shape="rect" id="Node000003" href="$class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021" title="Palauttaa ApiClientin singleton&#45;instanssin." alt="" coords="247,56,378,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,67,234,69,229,70,169,72"/>
-<area shape="rect" id="Node000004" href="$class_accountinfo.html#a3f83ececc71de3ec2ab446ee8510da49" title="Asettaa tilin JSON&#45;datan ja täyttää käyttöliittymän kentät." alt="" coords="217,107,409,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,81,238,102,233,104,150,86"/>
+<area shape="rect" id="Node000004" href="$class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021" title="Palauttaa ApiClientin singleton&#45;instanssin." alt="" coords="247,56,378,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,67,234,69,229,70,169,72"/>
+<area shape="rect" id="Node000005" href="$class_accountinfo.html#a3f83ececc71de3ec2ab446ee8510da49" title="Asettaa tilin JSON&#45;datan ja täyttää käyttöliittymän kentät." alt="" coords="217,107,409,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,81,238,102,233,104,150,86"/>
+<area shape="rect" id="Node000003" href="$class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="457,5,608,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,16,444,18,439,19,364,21"/>
 </map>

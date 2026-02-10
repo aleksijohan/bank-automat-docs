@@ -2,6 +2,8 @@
 <area shape="rect" id="Node000001" title="Hakee käyttäjän saldon backendistä." alt="" coords="5,31,144,57"/>
 <area shape="rect" id="Node000002" href="$class_api_client.html#a097acc160820ebc24ef692bc1c10e0fb" title="Suorittaa GET&#45;pyynnön annetulle endpointille." alt="" coords="207,5,308,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,32,194,27,189,28,144,37"/>
-<area shape="rect" id="Node000003" href="$class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021" title="Palauttaa ApiClientin singleton&#45;instanssin." alt="" coords="192,56,323,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,51,179,58,174,58,144,56"/>
+<area shape="rect" id="Node000004" href="$class_api_client.html#aed53f04f7ffef3b01dbd15dd3122e021" title="Palauttaa ApiClientin singleton&#45;instanssin." alt="" coords="192,56,323,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,51,179,58,174,58,144,56"/>
+<area shape="rect" id="Node000003" href="$class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="371,5,522,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,16,358,18,353,19,308,21"/>
 </map>

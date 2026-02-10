@@ -1,0 +1,5 @@
+<map id="ApiClient::post" name="ApiClient::post">
+<area shape="rect" id="Node000001" title="Suorittaa POST&#45;pyynnön annetulle endpointille." alt="" coords="5,5,113,32"/>
+<area shape="rect" id="Node000002" href="$class_environment.html#a0b4d914524bc241a737636ac1390a4e1" title="Palauttaa backendin perus&#45;URL:n." alt="" coords="161,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,16,148,18,143,19,113,21"/>
+</map>
